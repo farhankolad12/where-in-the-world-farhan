@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Manrope:wght@800&family=Nunito+Sans:wght@300;600;800&family=Open+Sans&family=Overpass:wght@400;700&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}
+
+.navbar {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 70px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.navbar button {
+    position: absolute;
+    right: 70px;
+    top: 25px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.inputs {
+    padding: 50px;
+}
+
+.inputs select {
+    font-family: inherit;
+    padding: 12px 20px;
+    float: right;
+    border: none;
+    border-radius: 6px;
+}
+
+.inputs input {
+    padding: 15px 25px;
+    border: none;
+    width: 350px;
+    color: hsl(0, 0%, 52%);
+    font-family: inherit;
+    margin-bottom: 30px;
+}
+
+.inputs input:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    outline: none;
+}
+
+.bi-search {
+    position: relative;
+    left: 30px;
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 65px;
+    margin-bottom: 50px;
+}
+
+p {
+    color: gray;
+    font-weight: bolder;
+}
+
+.country {
+    width: 300px;
+    height: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 20px;
+    border-radius: 10px;
+}
+
+.country-body {
+    padding: 20px;
+}
+
+.country-flag img {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.back-btn {
+    margin: 50px;
+}
+
+.back-btn button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.detail-country-flag {
+    margin: 50px;
+}
+
+.detail-country-flag img {
+    width: 450px;
+    height: 300px;
+}
+
+.main-detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.detail-body {
+    display: grid;
+    grid-template-columns: repeat(2, 8fr);
+    grid-gap: 10px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+.part-one > p{
+    margin: 10px;
+}
+
+.part-two > p {
+    margin: 10px;
+}
+
+.part-two {
+    margin-top: 30px;
+}
+
+.country-border {
+    position: absolute;
+    top: 70%;
+    left: 40.5%;
+}
+
+
+.dark-mode {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+
+.input-dark-mode {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.select-dark-mode {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 768px) {
+    .countries {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inputs input {
+        width: 100%;
+    }
+
+    .navbar button {
+        position: absolute;
+        right: 10px;
+        top: 21px;
+    }
+
+    .inputs select {
+        float: left;
+        margin-bottom: 5px;
+    }
+    
+    .detail-country-flag {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .detail-country-flag img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .detail-body {
+        display: block;
+        position: static;
+        margin-top: 40px;
+        margin-left: 33px;
+    }
+
+    .country-border {
+        position: static;
+        margin-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
